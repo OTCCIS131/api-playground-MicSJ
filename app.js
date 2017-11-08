@@ -1,0 +1,10 @@
+$(function () {
+
+    const vm = Vue({
+
+
+
+
+
+    })
+})
