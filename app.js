@@ -1,6 +1,6 @@
 $(function () {
 
-    const vm = Vue({
+    const vm = new Vue({
         el: '#things',
 
         data: {
