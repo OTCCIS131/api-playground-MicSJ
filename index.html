@@ -16,7 +16,16 @@
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
+    <div class="container-fluid">
+        <div id="things">
+            <button @click="loadStuff">Load</button>
+            <ul class="list-group">
+                <li class="list-group-item" v-for="dogs in dogs">
+                    {{dogs.message}}
+                </li>
+            </ul>
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
