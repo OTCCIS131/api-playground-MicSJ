@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Bootstrap 101 Template</title>
+    <title>API Loading</title>
 
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -20,8 +20,8 @@
         <div id="things">
             <button @click="loadStuff">Load</button>
             <ul class="list-group">
-                <li class="list-group-item" v-for="dogs in dogs">
-                    {{dogs.message}}
+                <li class="list-group-item" v-for="dog in dogs">
+                    {{dog.message}}
                 </li>
             </ul>
         </div>

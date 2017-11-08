@@ -10,8 +10,8 @@ $(function () {
         methods: ({
 
             loadStuff() {
-                this.$http.post('https://dog.ceo/api/breeds/list/').then(response => {
-                    this.dogs = response.body
+                this.$http.get('https://dog.ceo/api/breeds/list/').then(response => {
+                    this.dogs = response.body.message
                 });
             },
         })
