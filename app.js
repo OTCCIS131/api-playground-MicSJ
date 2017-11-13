@@ -10,7 +10,7 @@ $(function () {
         methods: ({
 
             loadStuff() {
-                this.$http.get('https://dog.ceo/api/breeds/list/').then(response => {
+                this.$http.get('https://dog.ceo/api/breeds/list/all').then(response => {
                     this.dogs = response.body.message
                 });
             },
